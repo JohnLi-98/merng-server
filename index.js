@@ -13,7 +13,7 @@ const { MONGODB } = require('./config.js');
 // Instantiate and pass to context, so it can be used in the resolvers
 const pubsub = new PubSub();
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 // set up Apollo server, context takes a callback, which gets anything that was passed before the 
 // apollo server. You get the request and response from express. Destructure the request and forward 
